@@ -9,25 +9,11 @@
 #include <sys/types.h> 
 #include <unistd.h>
 #include <nlohmann/json.hpp>
+#include "IMUsample.hpp"
 
 #define MAX 1024
 #define PORT 8888
 #define SA struct sockaddr 
-  
-struct IMUsample{
-    double timestamp{};
-    double quat[4]{};
-    double acc_g[3]{};
-};
-
-static void printSample(const IMUsample& s) {
-    std::cout << "Parsed IMUsample:\n";
-    std::cout << "  t    = " << s.timestamp << "\n";
-    std::cout << "  quat = ["
-              << s.quat[0] << ", " << s.quat[1] << ", " << s.quat[2] << ", " << s.quat[3] << "]\n";
-    std::cout << "  acc_g= ["
-              << s.acc_g[0] << ", " << s.acc_g[1] << ", " << s.acc_g[2] << "]\n";
-}
 
 bool parse_one_quat_accg(const std::string& line, IMUsample& out) {
     using nlohmann::json;
@@ -35,27 +21,27 @@ bool parse_one_quat_accg(const std::string& line, IMUsample& out) {
     json j;
     try {
         j = json::parse(line);
-    } catch (...) {
+
+        if (!j.contains("t") || !j.contains("quat") || !j.contains("acc_g")) {
+            return false;
+        }
+
+        const auto& qj = j["quat"];
+        const auto& aj = j["acc_g"];
+
+        if (!qj.is_array() || qj.size() != 4) return false;
+        if (!aj.is_array() || aj.size() != 3) return false;
+
+        double q[4], a[3];
+        for (int i = 0; i < 4; ++i) q[i] = qj[i].get<double>();
+        for (int i = 0; i < 3; ++i) a[i] = aj[i].get<double>();
+        out.setTimestamp(j["t"].get<double>());
+        out.setQuat(q);
+        out.setAccG(a);
+        return true;
+    }catch(...){
         return false;
     }
-
-    if (!j.contains("t") || !j.contains("quat") || !j.contains("acc_g")) {
-        return false;
-    }
-
-    const auto& q = j["quat"];
-    const auto& a = j["acc_g"];
-    if (!q.is_array() || q.size() != 4) return false;
-    if (!a.is_array() || a.size() != 3) return false;
-
-    try {
-        out.timestamp = j["t"].get<double>();
-        for (int i = 0; i < 4; ++i) out.quat[i] = q[i].get<double>();
-        for (int i = 0; i < 3; ++i) out.acc_g[i] = a[i].get<double>();
-    } catch (...) {
-        return false;
-    }
-    return true;
 }
 
 void process(int connfd)
@@ -91,7 +77,7 @@ void process(int connfd)
 
             IMUsample sample;
             if (parse_one_quat_accg(line, sample)) {
-                printSample(sample);
+                std::cout << sample;
             }
         }
     }

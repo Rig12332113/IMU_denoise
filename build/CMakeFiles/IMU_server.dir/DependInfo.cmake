@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/heziqin/Desktop/SLAM/IMU_denoise/src/IMUsample.cpp" "CMakeFiles/IMU_server.dir/src/IMUsample.cpp.o" "gcc" "CMakeFiles/IMU_server.dir/src/IMUsample.cpp.o.d"
   "/Users/heziqin/Desktop/SLAM/IMU_denoise/src/receiver.cpp" "CMakeFiles/IMU_server.dir/src/receiver.cpp.o" "gcc" "CMakeFiles/IMU_server.dir/src/receiver.cpp.o.d"
   )
 

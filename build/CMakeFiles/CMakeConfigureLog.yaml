@@ -20,6 +20,7 @@ events:
     names:
       - "uname"
     candidate_directories:
+      - "/Users/heziqin/miniconda3/bin/"
       - "/Users/heziqin/miniconda3/condabin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
@@ -34,12 +35,14 @@ events:
       - "/Applications/VMware Fusion.app/Contents/Public/"
       - "/usr/local/go/bin/"
     searched_directories:
+      - "/Users/heziqin/miniconda3/bin/uname"
       - "/Users/heziqin/miniconda3/condabin/uname"
       - "/usr/local/bin/uname"
       - "/System/Cryptexes/App/usr/bin/uname"
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
+        - "/Users/heziqin/miniconda3/bin"
         - "/Users/heziqin/miniconda3/condabin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
@@ -81,6 +84,7 @@ events:
       - "make"
       - "smake"
     candidate_directories:
+      - "/Users/heziqin/miniconda3/bin/"
       - "/Users/heziqin/miniconda3/condabin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
@@ -95,6 +99,7 @@ events:
       - "/Applications/VMware Fusion.app/Contents/Public/"
       - "/usr/local/go/bin/"
     searched_directories:
+      - "/Users/heziqin/miniconda3/bin/gmake"
       - "/Users/heziqin/miniconda3/condabin/gmake"
       - "/usr/local/bin/gmake"
       - "/System/Cryptexes/App/usr/bin/gmake"
@@ -108,12 +113,14 @@ events:
       - "/Library/Apple/usr/bin/gmake"
       - "/Applications/VMware Fusion.app/Contents/Public/gmake"
       - "/usr/local/go/bin/gmake"
+      - "/Users/heziqin/miniconda3/bin/make"
       - "/Users/heziqin/miniconda3/condabin/make"
       - "/usr/local/bin/make"
       - "/System/Cryptexes/App/usr/bin/make"
     found: "/usr/bin/make"
     search_context:
       ENV{PATH}:
+        - "/Users/heziqin/miniconda3/bin"
         - "/Users/heziqin/miniconda3/condabin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
@@ -153,6 +160,7 @@ events:
       - "icx"
       - "clang++"
     candidate_directories:
+      - "/Users/heziqin/miniconda3/bin/"
       - "/Users/heziqin/miniconda3/condabin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
@@ -167,12 +175,14 @@ events:
       - "/Applications/VMware Fusion.app/Contents/Public/"
       - "/usr/local/go/bin/"
     searched_directories:
+      - "/Users/heziqin/miniconda3/bin/c++"
       - "/Users/heziqin/miniconda3/condabin/c++"
       - "/usr/local/bin/c++"
       - "/System/Cryptexes/App/usr/bin/c++"
     found: "/usr/bin/c++"
     search_context:
       ENV{PATH}:
+        - "/Users/heziqin/miniconda3/bin"
         - "/Users/heziqin/miniconda3/condabin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
@@ -213,6 +223,7 @@ events:
     found: "/usr/local/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
+        - "/Users/heziqin/miniconda3/bin"
         - "/Users/heziqin/miniconda3/condabin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
@@ -310,6 +321,7 @@ events:
       - "ar"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/heziqin/miniconda3/bin/"
       - "/Users/heziqin/miniconda3/condabin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
@@ -325,6 +337,7 @@ events:
     found: "/usr/bin/ar"
     search_context:
       ENV{PATH}:
+        - "/Users/heziqin/miniconda3/bin"
         - "/Users/heziqin/miniconda3/condabin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
@@ -359,6 +372,7 @@ events:
       - "ranlib"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/heziqin/miniconda3/bin/"
       - "/Users/heziqin/miniconda3/condabin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
@@ -374,6 +388,7 @@ events:
     found: "/usr/bin/ranlib"
     search_context:
       ENV{PATH}:
+        - "/Users/heziqin/miniconda3/bin"
         - "/Users/heziqin/miniconda3/condabin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
@@ -408,6 +423,7 @@ events:
       - "strip"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/heziqin/miniconda3/bin/"
       - "/Users/heziqin/miniconda3/condabin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
@@ -423,6 +439,7 @@ events:
     found: "/usr/bin/strip"
     search_context:
       ENV{PATH}:
+        - "/Users/heziqin/miniconda3/bin"
         - "/Users/heziqin/miniconda3/condabin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
@@ -457,6 +474,7 @@ events:
       - "ld"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/heziqin/miniconda3/bin/"
       - "/Users/heziqin/miniconda3/condabin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
@@ -472,6 +490,7 @@ events:
     found: "/usr/bin/ld"
     search_context:
       ENV{PATH}:
+        - "/Users/heziqin/miniconda3/bin"
         - "/Users/heziqin/miniconda3/condabin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
@@ -506,6 +525,7 @@ events:
       - "nm"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/heziqin/miniconda3/bin/"
       - "/Users/heziqin/miniconda3/condabin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
@@ -521,6 +541,7 @@ events:
     found: "/usr/bin/nm"
     search_context:
       ENV{PATH}:
+        - "/Users/heziqin/miniconda3/bin"
         - "/Users/heziqin/miniconda3/condabin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
@@ -555,6 +576,7 @@ events:
       - "objdump"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/heziqin/miniconda3/bin/"
       - "/Users/heziqin/miniconda3/condabin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
@@ -570,6 +592,7 @@ events:
     found: "/usr/bin/objdump"
     search_context:
       ENV{PATH}:
+        - "/Users/heziqin/miniconda3/bin"
         - "/Users/heziqin/miniconda3/condabin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
@@ -604,6 +627,7 @@ events:
       - "objcopy"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/heziqin/miniconda3/bin/"
       - "/Users/heziqin/miniconda3/condabin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
@@ -618,6 +642,7 @@ events:
       - "/usr/local/go/bin/"
     searched_directories:
       - "/usr/bin/objcopy"
+      - "/Users/heziqin/miniconda3/bin/objcopy"
       - "/Users/heziqin/miniconda3/condabin/objcopy"
       - "/usr/local/bin/objcopy"
       - "/System/Cryptexes/App/usr/bin/objcopy"
@@ -633,6 +658,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/Users/heziqin/miniconda3/bin"
         - "/Users/heziqin/miniconda3/condabin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
@@ -667,6 +693,7 @@ events:
       - "readelf"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/heziqin/miniconda3/bin/"
       - "/Users/heziqin/miniconda3/condabin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
@@ -681,6 +708,7 @@ events:
       - "/usr/local/go/bin/"
     searched_directories:
       - "/usr/bin/readelf"
+      - "/Users/heziqin/miniconda3/bin/readelf"
       - "/Users/heziqin/miniconda3/condabin/readelf"
       - "/usr/local/bin/readelf"
       - "/System/Cryptexes/App/usr/bin/readelf"
@@ -696,6 +724,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/Users/heziqin/miniconda3/bin"
         - "/Users/heziqin/miniconda3/condabin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
@@ -730,6 +759,7 @@ events:
       - "dlltool"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/heziqin/miniconda3/bin/"
       - "/Users/heziqin/miniconda3/condabin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
@@ -744,6 +774,7 @@ events:
       - "/usr/local/go/bin/"
     searched_directories:
       - "/usr/bin/dlltool"
+      - "/Users/heziqin/miniconda3/bin/dlltool"
       - "/Users/heziqin/miniconda3/condabin/dlltool"
       - "/usr/local/bin/dlltool"
       - "/System/Cryptexes/App/usr/bin/dlltool"
@@ -759,6 +790,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/Users/heziqin/miniconda3/bin"
         - "/Users/heziqin/miniconda3/condabin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
@@ -793,6 +825,7 @@ events:
       - "addr2line"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/heziqin/miniconda3/bin/"
       - "/Users/heziqin/miniconda3/condabin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
@@ -807,6 +840,7 @@ events:
       - "/usr/local/go/bin/"
     searched_directories:
       - "/usr/bin/addr2line"
+      - "/Users/heziqin/miniconda3/bin/addr2line"
       - "/Users/heziqin/miniconda3/condabin/addr2line"
       - "/usr/local/bin/addr2line"
       - "/System/Cryptexes/App/usr/bin/addr2line"
@@ -822,6 +856,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/Users/heziqin/miniconda3/bin"
         - "/Users/heziqin/miniconda3/condabin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
@@ -856,6 +891,7 @@ events:
       - "tapi"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/heziqin/miniconda3/bin/"
       - "/Users/heziqin/miniconda3/condabin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
@@ -870,6 +906,7 @@ events:
       - "/usr/local/go/bin/"
     searched_directories:
       - "/usr/bin/tapi"
+      - "/Users/heziqin/miniconda3/bin/tapi"
       - "/Users/heziqin/miniconda3/condabin/tapi"
       - "/usr/local/bin/tapi"
       - "/System/Cryptexes/App/usr/bin/tapi"
@@ -885,6 +922,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/Users/heziqin/miniconda3/bin"
         - "/Users/heziqin/miniconda3/condabin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
@@ -918,6 +956,7 @@ events:
     names:
       - "install_name_tool"
     candidate_directories:
+      - "/Users/heziqin/miniconda3/bin/"
       - "/Users/heziqin/miniconda3/condabin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
@@ -932,12 +971,14 @@ events:
       - "/Applications/VMware Fusion.app/Contents/Public/"
       - "/usr/local/go/bin/"
     searched_directories:
+      - "/Users/heziqin/miniconda3/bin/install_name_tool"
       - "/Users/heziqin/miniconda3/condabin/install_name_tool"
       - "/usr/local/bin/install_name_tool"
       - "/System/Cryptexes/App/usr/bin/install_name_tool"
     found: "/usr/bin/install_name_tool"
     search_context:
       ENV{PATH}:
+        - "/Users/heziqin/miniconda3/bin"
         - "/Users/heziqin/miniconda3/condabin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
@@ -961,8 +1002,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles/CMakeScratch/TryCompile-SSQM0b"
-      binary: "/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles/CMakeScratch/TryCompile-SSQM0b"
+      source: "/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles/CMakeScratch/TryCompile-PFKDEK"
+      binary: "/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles/CMakeScratch/TryCompile-PFKDEK"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -975,19 +1016,19 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles/CMakeScratch/TryCompile-SSQM0b'
+        Change Dir: '/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles/CMakeScratch/TryCompile-PFKDEK'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_936d0/fast
-        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_936d0.dir/build.make CMakeFiles/cmTC_936d0.dir/build
-        Building CXX object CMakeFiles/cmTC_936d0.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -Wl,-v -MD -MT CMakeFiles/cmTC_936d0.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_936d0.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_936d0.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e084a/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e084a.dir/build.make CMakeFiles/cmTC_e084a.dir/build
+        Building CXX object CMakeFiles/cmTC_e084a.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -Wl,-v -MD -MT CMakeFiles/cmTC_e084a.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_e084a.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_e084a.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Apple clang version 17.0.0 (clang-1700.0.13.3)
         Target: x86_64-apple-darwin24.6.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
         clang++: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
         ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=15.4 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -fdebug-compilation-dir=/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles/CMakeScratch/TryCompile-SSQM0b -target-linker-version 1167.4.1 -v -fcoverage-compilation-dir=/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles/CMakeScratch/TryCompile-SSQM0b -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_936d0.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_936d0.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_936d0.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=15.4 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -fdebug-compilation-dir=/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles/CMakeScratch/TryCompile-PFKDEK -target-linker-version 1167.4.1 -v -fcoverage-compilation-dir=/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles/CMakeScratch/TryCompile-PFKDEK -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_e084a.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_e084a.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_e084a.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 17.0.0 (clang-1700.0.13.3) default target x86_64-apple-darwin24.6.0
         ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"
         ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks"
@@ -1001,13 +1042,13 @@ events:
          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
          /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
         End of search list.
-        Linking CXX executable cmTC_936d0
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_936d0.dir/link.txt --verbose=1
+        Linking CXX executable cmTC_e084a
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e084a.dir/link.txt --verbose=1
         Apple clang version 17.0.0 (clang-1700.0.13.3)
         Target: x86_64-apple-darwin24.6.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 15.0.0 15.4 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_936d0 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_936d0.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 15.0.0 15.4 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_e084a -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_e084a.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a
         @(#)PROGRAM:ld PROJECT:ld-1167.4.1
         BUILD 19:59:02 Mar 12 2025
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
@@ -1020,7 +1061,7 @@ events:
         	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift
         Framework search paths:
         	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
-        /usr/bin/c++ -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_936d0.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_936d0
+        /usr/bin/c++ -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_e084a.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e084a
         
       exitCode: 0
   -
@@ -1066,19 +1107,19 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles/CMakeScratch/TryCompile-SSQM0b']
+        ignore line: [Change Dir: '/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles/CMakeScratch/TryCompile-PFKDEK']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_936d0/fast]
-        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_936d0.dir/build.make CMakeFiles/cmTC_936d0.dir/build]
-        ignore line: [Building CXX object CMakeFiles/cmTC_936d0.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -Wl -v -MD -MT CMakeFiles/cmTC_936d0.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_936d0.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_936d0.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e084a/fast]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e084a.dir/build.make CMakeFiles/cmTC_e084a.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_e084a.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -Wl -v -MD -MT CMakeFiles/cmTC_e084a.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_e084a.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_e084a.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Apple clang version 17.0.0 (clang-1700.0.13.3)]
         ignore line: [Target: x86_64-apple-darwin24.6.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
         ignore line: [clang++: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
         ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"]
-        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=15.4 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -fdebug-compilation-dir=/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles/CMakeScratch/TryCompile-SSQM0b -target-linker-version 1167.4.1 -v -fcoverage-compilation-dir=/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles/CMakeScratch/TryCompile-SSQM0b -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_936d0.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_936d0.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_936d0.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=15.4 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -fdebug-compilation-dir=/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles/CMakeScratch/TryCompile-PFKDEK -target-linker-version 1167.4.1 -v -fcoverage-compilation-dir=/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles/CMakeScratch/TryCompile-PFKDEK -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_e084a.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_e084a.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_e084a.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 17.0.0 (clang-1700.0.13.3) default target x86_64-apple-darwin24.6.0]
         ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"]
         ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks"]
@@ -1092,13 +1133,13 @@ events:
         ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
         ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [Linking CXX executable cmTC_936d0]
-        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_936d0.dir/link.txt --verbose=1]
+        ignore line: [Linking CXX executable cmTC_e084a]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e084a.dir/link.txt --verbose=1]
         ignore line: [Apple clang version 17.0.0 (clang-1700.0.13.3)]
         ignore line: [Target: x86_64-apple-darwin24.6.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 15.0.0 15.4 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_936d0 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_936d0.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 15.0.0 15.4 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_e084a -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_e084a.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
@@ -1115,12 +1156,12 @@ events:
           arg [-mllvm] ==> ignore
           arg [-enable-linkonceodr-outlining] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_936d0] ==> ignore
+          arg [cmTC_e084a] ==> ignore
           arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
           arg [-search_paths_first] ==> ignore
           arg [-headerpad_max_install_names] ==> ignore
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_936d0.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_e084a.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lc++] ==> lib [c++]
           arg [-lSystem] ==> lib [System]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
@@ -1199,27 +1240,28 @@ events:
         mode: "config"
         reason: "no_exist"
       -
-        path: "/Users/heziqin/miniconda3/condabin/nlohmann_jsonConfig.cmake"
+        path: "/Users/heziqin/miniconda3/nlohmann_jsonConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/Users/heziqin/miniconda3/condabin/nlohmann_json-config.cmake"
+        path: "/Users/heziqin/miniconda3/nlohmann_json-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/usr/local/nlohmann_jsonConfig.cmake"
+        path: "/Users/heziqin/miniconda3/cmake/nlohmann_jsonConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/usr/local/nlohmann_json-config.cmake"
+        path: "/Users/heziqin/miniconda3/cmake/nlohmann_json-config.cmake"
         mode: "config"
         reason: "no_exist"
     found:
-      path: "/usr/local/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake"
+      path: "/Users/heziqin/miniconda3/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake"
       mode: "config"
-      version: "3.12.0"
+      version: "3.11.2"
     search_context:
       ENV{PATH}:
+        - "/Users/heziqin/miniconda3/bin"
         - "/Users/heziqin/miniconda3/condabin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"

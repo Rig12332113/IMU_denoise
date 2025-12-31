@@ -208,7 +208,7 @@ IMU_denoise_IS_TOP_LEVEL:STATIC=ON
 IMU_denoise_SOURCE_DIR:STATIC=/Users/heziqin/Desktop/SLAM/IMU_denoise
 
 //The directory containing a CMake configuration file for nlohmann_json.
-nlohmann_json_DIR:PATH=/usr/local/share/cmake/nlohmann_json
+nlohmann_json_DIR:PATH=/Users/heziqin/miniconda3/share/cmake/nlohmann_json
 
 
 ########################
@@ -345,5 +345,5 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding nlohmann_json
-FIND_PACKAGE_MESSAGE_DETAILS_nlohmann_json:INTERNAL=[/usr/local/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake][v3.12.0()]
+FIND_PACKAGE_MESSAGE_DETAILS_nlohmann_json:INTERNAL=[/Users/heziqin/miniconda3/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake][v3.11.2()]
 

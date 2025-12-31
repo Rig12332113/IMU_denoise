@@ -129,6 +129,30 @@ IMU_server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_server.dir/build.make CMakeFiles/IMU_server.dir/build
 .PHONY : IMU_server/fast
 
+src/IMUsample.o: src/IMUsample.cpp.o
+.PHONY : src/IMUsample.o
+
+# target to build an object file
+src/IMUsample.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_server.dir/build.make CMakeFiles/IMU_server.dir/src/IMUsample.cpp.o
+.PHONY : src/IMUsample.cpp.o
+
+src/IMUsample.i: src/IMUsample.cpp.i
+.PHONY : src/IMUsample.i
+
+# target to preprocess a source file
+src/IMUsample.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_server.dir/build.make CMakeFiles/IMU_server.dir/src/IMUsample.cpp.i
+.PHONY : src/IMUsample.cpp.i
+
+src/IMUsample.s: src/IMUsample.cpp.s
+.PHONY : src/IMUsample.s
+
+# target to generate assembly for a file
+src/IMUsample.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_server.dir/build.make CMakeFiles/IMU_server.dir/src/IMUsample.cpp.s
+.PHONY : src/IMUsample.cpp.s
+
 src/receiver.o: src/receiver.cpp.o
 .PHONY : src/receiver.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... IMU_server"
+	@echo "... src/IMUsample.o"
+	@echo "... src/IMUsample.i"
+	@echo "... src/IMUsample.s"
 	@echo "... src/receiver.o"
 	@echo "... src/receiver.i"
 	@echo "... src/receiver.s"

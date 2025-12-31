@@ -1,5 +1,5 @@
-CMakeFiles/IMU_server.dir/src/receiver.cpp.o: \
-  /Users/heziqin/Desktop/SLAM/IMU_denoise/src/receiver.cpp \
+CMakeFiles/IMU_server.dir/src/IMUsample.cpp.o: \
+  /Users/heziqin/Desktop/SLAM/IMU_denoise/src/IMUsample.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
@@ -784,82 +784,4 @@ CMakeFiles/IMU_server.dir/src/receiver.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/unistd.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/netdb.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_socklen_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/netinet/in.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/socket.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/constrained_ctypes.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/machine/_param.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/i386/_param.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/net/net_kev.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_sa_family_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_iovec_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/netinet6/in6.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/unistd.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_posix_vdisable.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/select.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_select.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_uuid_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/gethostuuid.h \
-  /usr/local/include/nlohmann/json.hpp \
-  /usr/local/include/nlohmann/adl_serializer.hpp \
-  /usr/local/include/nlohmann/detail/abi_macros.hpp \
-  /usr/local/include/nlohmann/detail/conversions/from_json.hpp \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/valarray \
-  /usr/local/include/nlohmann/detail/exceptions.hpp \
-  /usr/local/include/nlohmann/detail/value_t.hpp \
-  /usr/local/include/nlohmann/detail/macro_scope.hpp \
-  /usr/local/include/nlohmann/detail/meta/detected.hpp \
-  /usr/local/include/nlohmann/detail/meta/void_t.hpp \
-  /usr/local/include/nlohmann/thirdparty/hedley/hedley.hpp \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/assert.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_assert.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_static_assert.h \
-  /usr/local/include/nlohmann/detail/string_escape.hpp \
-  /usr/local/include/nlohmann/detail/input/position_t.hpp \
-  /usr/local/include/nlohmann/detail/meta/cpp_future.hpp \
-  /usr/local/include/nlohmann/detail/meta/type_traits.hpp \
-  /usr/local/include/nlohmann/detail/iterators/iterator_traits.hpp \
-  /usr/local/include/nlohmann/detail/meta/call_std/begin.hpp \
-  /usr/local/include/nlohmann/detail/meta/call_std/end.hpp \
-  /usr/local/include/nlohmann/json_fwd.hpp \
-  /usr/local/include/nlohmann/detail/string_concat.hpp \
-  /usr/local/include/nlohmann/detail/meta/identity_tag.hpp \
-  /usr/local/include/nlohmann/detail/meta/std_fs.hpp \
-  /usr/local/include/nlohmann/detail/conversions/to_json.hpp \
-  /usr/local/include/nlohmann/detail/iterators/iteration_proxy.hpp \
-  /usr/local/include/nlohmann/detail/string_utils.hpp \
-  /usr/local/include/nlohmann/byte_container_with_subtype.hpp \
-  /usr/local/include/nlohmann/detail/hash.hpp \
-  /usr/local/include/nlohmann/detail/input/binary_reader.hpp \
-  /usr/local/include/nlohmann/detail/input/input_adapters.hpp \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/numeric \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/accumulate.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/inner_product.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/iota.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/partial_sum.h \
-  /usr/local/include/nlohmann/detail/input/json_sax.hpp \
-  /usr/local/include/nlohmann/detail/input/lexer.hpp \
-  /usr/local/include/nlohmann/detail/meta/is_sax.hpp \
-  /usr/local/include/nlohmann/detail/input/parser.hpp \
-  /usr/local/include/nlohmann/detail/iterators/internal_iterator.hpp \
-  /usr/local/include/nlohmann/detail/iterators/primitive_iterator.hpp \
-  /usr/local/include/nlohmann/detail/iterators/iter_impl.hpp \
-  /usr/local/include/nlohmann/detail/iterators/json_reverse_iterator.hpp \
-  /usr/local/include/nlohmann/detail/json_custom_base_class.hpp \
-  /usr/local/include/nlohmann/detail/json_pointer.hpp \
-  /usr/local/include/nlohmann/detail/json_ref.hpp \
-  /usr/local/include/nlohmann/detail/output/binary_writer.hpp \
-  /usr/local/include/nlohmann/detail/output/output_adapters.hpp \
-  /usr/local/include/nlohmann/detail/output/serializer.hpp \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
-  /usr/local/include/nlohmann/detail/conversions/to_chars.hpp \
-  /usr/local/include/nlohmann/ordered_map.hpp \
-  /usr/local/include/nlohmann/detail/macro_unscope.hpp \
-  /usr/local/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
   /Users/heziqin/Desktop/SLAM/IMU_denoise/include/IMUsample.hpp
