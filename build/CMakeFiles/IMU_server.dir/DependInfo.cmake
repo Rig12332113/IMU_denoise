@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/heziqin/Desktop/SLAM/IMU_denoise/src/IMUsample.cpp" "CMakeFiles/IMU_server.dir/src/IMUsample.cpp.o" "gcc" "CMakeFiles/IMU_server.dir/src/IMUsample.cpp.o.d"
   "/Users/heziqin/Desktop/SLAM/IMU_denoise/src/receiver.cpp" "CMakeFiles/IMU_server.dir/src/receiver.cpp.o" "gcc" "CMakeFiles/IMU_server.dir/src/receiver.cpp.o.d"
+  "/Users/heziqin/Desktop/SLAM/IMU_denoise/src/waveletDenoiser.cpp" "CMakeFiles/IMU_server.dir/src/waveletDenoiser.cpp.o" "gcc" "CMakeFiles/IMU_server.dir/src/waveletDenoiser.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

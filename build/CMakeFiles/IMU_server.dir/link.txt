@@ -1,1 +1,1 @@
-/usr/bin/c++ -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/IMU_server.dir/src/receiver.cpp.o CMakeFiles/IMU_server.dir/src/IMUsample.cpp.o -o IMU_server
+/usr/bin/c++ -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/IMU_server.dir/src/receiver.cpp.o CMakeFiles/IMU_server.dir/src/IMUsample.cpp.o CMakeFiles/IMU_server.dir/src/waveletDenoiser.cpp.o -o IMU_server

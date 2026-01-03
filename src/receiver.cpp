@@ -1,5 +1,4 @@
 #include <iostream>
-
 #include <stdio.h>
 #include <netdb.h> 
 #include <netinet/in.h> 
@@ -10,6 +9,7 @@
 #include <unistd.h>
 #include <nlohmann/json.hpp>
 #include "IMUsample.hpp"
+#include "waveletDenoiser.hpp"
 
 #define MAX 1024
 #define PORT 8888
@@ -51,6 +51,7 @@ void process(int connfd)
     accum.reserve(8 * MAX);
 
     bool printed_debug_line = false;
+    denoiser dn;
 
     while (true) {
         ssize_t byteCount = ::read(connfd, &data[0], data.size());
@@ -76,8 +77,22 @@ void process(int connfd)
             if (line.empty()) continue;
 
             IMUsample sample;
-            if (parse_one_quat_accg(line, sample)) {
-                std::cout << sample;
+            if (!parse_one_quat_accg(line, sample)) {
+                continue;
+            }
+            std::cout << sample;
+            const auto a = sample.getAccG();
+            dn.push(sample.getTimestamp(), a[0], a[1], a[2]);
+
+            // Drain all available hop outputs (important on bursty reads)
+            while (dn.denoise()) {
+                const auto& ox = dn.out_x();
+                const auto& oy = dn.out_y();
+                const auto& oz = dn.out_z();
+
+                for (int k = 0; k < denoiser::hop; ++k) {
+                    std::cout << ox[k] << " " << oy[k] << " " << oz[k] << std::endl;
+                }
             }
         }
     }

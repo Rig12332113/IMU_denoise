@@ -862,4 +862,5 @@ CMakeFiles/IMU_server.dir/src/receiver.cpp.o: \
   /usr/local/include/nlohmann/ordered_map.hpp \
   /usr/local/include/nlohmann/detail/macro_unscope.hpp \
   /usr/local/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
-  /Users/heziqin/Desktop/SLAM/IMU_denoise/include/IMUsample.hpp
+  /Users/heziqin/Desktop/SLAM/IMU_denoise/include/IMUsample.hpp \
+  /Users/heziqin/Desktop/SLAM/IMU_denoise/include/waveletDenoiser.hpp

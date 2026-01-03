@@ -177,6 +177,30 @@ src/receiver.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_server.dir/build.make CMakeFiles/IMU_server.dir/src/receiver.cpp.s
 .PHONY : src/receiver.cpp.s
 
+src/waveletDenoiser.o: src/waveletDenoiser.cpp.o
+.PHONY : src/waveletDenoiser.o
+
+# target to build an object file
+src/waveletDenoiser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_server.dir/build.make CMakeFiles/IMU_server.dir/src/waveletDenoiser.cpp.o
+.PHONY : src/waveletDenoiser.cpp.o
+
+src/waveletDenoiser.i: src/waveletDenoiser.cpp.i
+.PHONY : src/waveletDenoiser.i
+
+# target to preprocess a source file
+src/waveletDenoiser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_server.dir/build.make CMakeFiles/IMU_server.dir/src/waveletDenoiser.cpp.i
+.PHONY : src/waveletDenoiser.cpp.i
+
+src/waveletDenoiser.s: src/waveletDenoiser.cpp.s
+.PHONY : src/waveletDenoiser.s
+
+# target to generate assembly for a file
+src/waveletDenoiser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_server.dir/build.make CMakeFiles/IMU_server.dir/src/waveletDenoiser.cpp.s
+.PHONY : src/waveletDenoiser.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +216,9 @@ help:
 	@echo "... src/receiver.o"
 	@echo "... src/receiver.i"
 	@echo "... src/receiver.s"
+	@echo "... src/waveletDenoiser.o"
+	@echo "... src/waveletDenoiser.i"
+	@echo "... src/waveletDenoiser.s"
 .PHONY : help
 
 
