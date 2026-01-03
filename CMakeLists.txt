@@ -6,6 +6,7 @@ find_package(nlohmann_json REQUIRED)
 add_executable(IMU_server
     src/receiver.cpp
     src/IMUsample.cpp
+    src/waveletDenoiser.cpp
 )
 
 target_include_directories(IMU_server
