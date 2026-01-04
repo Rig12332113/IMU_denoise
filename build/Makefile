@@ -117,6 +117,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ui_lib
+
+# Build rule for target.
+ui_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ui_lib
+.PHONY : ui_lib
+
+# fast build rule for target.
+ui_lib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_lib.dir/build.make CMakeFiles/ui_lib.dir/build
+.PHONY : ui_lib/fast
+
+#=============================================================================
+# Target rules for targets named IMU_viewer
+
+# Build rule for target.
+IMU_viewer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 IMU_viewer
+.PHONY : IMU_viewer
+
+# fast build rule for target.
+IMU_viewer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_viewer.dir/build.make CMakeFiles/IMU_viewer.dir/build
+.PHONY : IMU_viewer/fast
+
+#=============================================================================
 # Target rules for targets named IMU_server
 
 # Build rule for target.
@@ -128,6 +154,198 @@ IMU_server: cmake_check_build_system
 IMU_server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_server.dir/build.make CMakeFiles/IMU_server.dir/build
 .PHONY : IMU_server/fast
+
+external/imgui/backends/imgui_impl_glfw.o: external/imgui/backends/imgui_impl_glfw.cpp.o
+.PHONY : external/imgui/backends/imgui_impl_glfw.o
+
+# target to build an object file
+external/imgui/backends/imgui_impl_glfw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_lib.dir/build.make CMakeFiles/ui_lib.dir/external/imgui/backends/imgui_impl_glfw.cpp.o
+.PHONY : external/imgui/backends/imgui_impl_glfw.cpp.o
+
+external/imgui/backends/imgui_impl_glfw.i: external/imgui/backends/imgui_impl_glfw.cpp.i
+.PHONY : external/imgui/backends/imgui_impl_glfw.i
+
+# target to preprocess a source file
+external/imgui/backends/imgui_impl_glfw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_lib.dir/build.make CMakeFiles/ui_lib.dir/external/imgui/backends/imgui_impl_glfw.cpp.i
+.PHONY : external/imgui/backends/imgui_impl_glfw.cpp.i
+
+external/imgui/backends/imgui_impl_glfw.s: external/imgui/backends/imgui_impl_glfw.cpp.s
+.PHONY : external/imgui/backends/imgui_impl_glfw.s
+
+# target to generate assembly for a file
+external/imgui/backends/imgui_impl_glfw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_lib.dir/build.make CMakeFiles/ui_lib.dir/external/imgui/backends/imgui_impl_glfw.cpp.s
+.PHONY : external/imgui/backends/imgui_impl_glfw.cpp.s
+
+external/imgui/backends/imgui_impl_opengl3.o: external/imgui/backends/imgui_impl_opengl3.cpp.o
+.PHONY : external/imgui/backends/imgui_impl_opengl3.o
+
+# target to build an object file
+external/imgui/backends/imgui_impl_opengl3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_lib.dir/build.make CMakeFiles/ui_lib.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o
+.PHONY : external/imgui/backends/imgui_impl_opengl3.cpp.o
+
+external/imgui/backends/imgui_impl_opengl3.i: external/imgui/backends/imgui_impl_opengl3.cpp.i
+.PHONY : external/imgui/backends/imgui_impl_opengl3.i
+
+# target to preprocess a source file
+external/imgui/backends/imgui_impl_opengl3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_lib.dir/build.make CMakeFiles/ui_lib.dir/external/imgui/backends/imgui_impl_opengl3.cpp.i
+.PHONY : external/imgui/backends/imgui_impl_opengl3.cpp.i
+
+external/imgui/backends/imgui_impl_opengl3.s: external/imgui/backends/imgui_impl_opengl3.cpp.s
+.PHONY : external/imgui/backends/imgui_impl_opengl3.s
+
+# target to generate assembly for a file
+external/imgui/backends/imgui_impl_opengl3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_lib.dir/build.make CMakeFiles/ui_lib.dir/external/imgui/backends/imgui_impl_opengl3.cpp.s
+.PHONY : external/imgui/backends/imgui_impl_opengl3.cpp.s
+
+external/imgui/imgui.o: external/imgui/imgui.cpp.o
+.PHONY : external/imgui/imgui.o
+
+# target to build an object file
+external/imgui/imgui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_lib.dir/build.make CMakeFiles/ui_lib.dir/external/imgui/imgui.cpp.o
+.PHONY : external/imgui/imgui.cpp.o
+
+external/imgui/imgui.i: external/imgui/imgui.cpp.i
+.PHONY : external/imgui/imgui.i
+
+# target to preprocess a source file
+external/imgui/imgui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_lib.dir/build.make CMakeFiles/ui_lib.dir/external/imgui/imgui.cpp.i
+.PHONY : external/imgui/imgui.cpp.i
+
+external/imgui/imgui.s: external/imgui/imgui.cpp.s
+.PHONY : external/imgui/imgui.s
+
+# target to generate assembly for a file
+external/imgui/imgui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_lib.dir/build.make CMakeFiles/ui_lib.dir/external/imgui/imgui.cpp.s
+.PHONY : external/imgui/imgui.cpp.s
+
+external/imgui/imgui_draw.o: external/imgui/imgui_draw.cpp.o
+.PHONY : external/imgui/imgui_draw.o
+
+# target to build an object file
+external/imgui/imgui_draw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_lib.dir/build.make CMakeFiles/ui_lib.dir/external/imgui/imgui_draw.cpp.o
+.PHONY : external/imgui/imgui_draw.cpp.o
+
+external/imgui/imgui_draw.i: external/imgui/imgui_draw.cpp.i
+.PHONY : external/imgui/imgui_draw.i
+
+# target to preprocess a source file
+external/imgui/imgui_draw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_lib.dir/build.make CMakeFiles/ui_lib.dir/external/imgui/imgui_draw.cpp.i
+.PHONY : external/imgui/imgui_draw.cpp.i
+
+external/imgui/imgui_draw.s: external/imgui/imgui_draw.cpp.s
+.PHONY : external/imgui/imgui_draw.s
+
+# target to generate assembly for a file
+external/imgui/imgui_draw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_lib.dir/build.make CMakeFiles/ui_lib.dir/external/imgui/imgui_draw.cpp.s
+.PHONY : external/imgui/imgui_draw.cpp.s
+
+external/imgui/imgui_tables.o: external/imgui/imgui_tables.cpp.o
+.PHONY : external/imgui/imgui_tables.o
+
+# target to build an object file
+external/imgui/imgui_tables.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_lib.dir/build.make CMakeFiles/ui_lib.dir/external/imgui/imgui_tables.cpp.o
+.PHONY : external/imgui/imgui_tables.cpp.o
+
+external/imgui/imgui_tables.i: external/imgui/imgui_tables.cpp.i
+.PHONY : external/imgui/imgui_tables.i
+
+# target to preprocess a source file
+external/imgui/imgui_tables.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_lib.dir/build.make CMakeFiles/ui_lib.dir/external/imgui/imgui_tables.cpp.i
+.PHONY : external/imgui/imgui_tables.cpp.i
+
+external/imgui/imgui_tables.s: external/imgui/imgui_tables.cpp.s
+.PHONY : external/imgui/imgui_tables.s
+
+# target to generate assembly for a file
+external/imgui/imgui_tables.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_lib.dir/build.make CMakeFiles/ui_lib.dir/external/imgui/imgui_tables.cpp.s
+.PHONY : external/imgui/imgui_tables.cpp.s
+
+external/imgui/imgui_widgets.o: external/imgui/imgui_widgets.cpp.o
+.PHONY : external/imgui/imgui_widgets.o
+
+# target to build an object file
+external/imgui/imgui_widgets.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_lib.dir/build.make CMakeFiles/ui_lib.dir/external/imgui/imgui_widgets.cpp.o
+.PHONY : external/imgui/imgui_widgets.cpp.o
+
+external/imgui/imgui_widgets.i: external/imgui/imgui_widgets.cpp.i
+.PHONY : external/imgui/imgui_widgets.i
+
+# target to preprocess a source file
+external/imgui/imgui_widgets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_lib.dir/build.make CMakeFiles/ui_lib.dir/external/imgui/imgui_widgets.cpp.i
+.PHONY : external/imgui/imgui_widgets.cpp.i
+
+external/imgui/imgui_widgets.s: external/imgui/imgui_widgets.cpp.s
+.PHONY : external/imgui/imgui_widgets.s
+
+# target to generate assembly for a file
+external/imgui/imgui_widgets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_lib.dir/build.make CMakeFiles/ui_lib.dir/external/imgui/imgui_widgets.cpp.s
+.PHONY : external/imgui/imgui_widgets.cpp.s
+
+external/implot/implot.o: external/implot/implot.cpp.o
+.PHONY : external/implot/implot.o
+
+# target to build an object file
+external/implot/implot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_lib.dir/build.make CMakeFiles/ui_lib.dir/external/implot/implot.cpp.o
+.PHONY : external/implot/implot.cpp.o
+
+external/implot/implot.i: external/implot/implot.cpp.i
+.PHONY : external/implot/implot.i
+
+# target to preprocess a source file
+external/implot/implot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_lib.dir/build.make CMakeFiles/ui_lib.dir/external/implot/implot.cpp.i
+.PHONY : external/implot/implot.cpp.i
+
+external/implot/implot.s: external/implot/implot.cpp.s
+.PHONY : external/implot/implot.s
+
+# target to generate assembly for a file
+external/implot/implot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_lib.dir/build.make CMakeFiles/ui_lib.dir/external/implot/implot.cpp.s
+.PHONY : external/implot/implot.cpp.s
+
+external/implot/implot_items.o: external/implot/implot_items.cpp.o
+.PHONY : external/implot/implot_items.o
+
+# target to build an object file
+external/implot/implot_items.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_lib.dir/build.make CMakeFiles/ui_lib.dir/external/implot/implot_items.cpp.o
+.PHONY : external/implot/implot_items.cpp.o
+
+external/implot/implot_items.i: external/implot/implot_items.cpp.i
+.PHONY : external/implot/implot_items.i
+
+# target to preprocess a source file
+external/implot/implot_items.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_lib.dir/build.make CMakeFiles/ui_lib.dir/external/implot/implot_items.cpp.i
+.PHONY : external/implot/implot_items.cpp.i
+
+external/implot/implot_items.s: external/implot/implot_items.cpp.s
+.PHONY : external/implot/implot_items.s
+
+# target to generate assembly for a file
+external/implot/implot_items.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_lib.dir/build.make CMakeFiles/ui_lib.dir/external/implot/implot_items.cpp.s
+.PHONY : external/implot/implot_items.cpp.s
 
 src/IMUsample.o: src/IMUsample.cpp.o
 .PHONY : src/IMUsample.o
@@ -152,6 +370,30 @@ src/IMUsample.s: src/IMUsample.cpp.s
 src/IMUsample.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_server.dir/build.make CMakeFiles/IMU_server.dir/src/IMUsample.cpp.s
 .PHONY : src/IMUsample.cpp.s
+
+src/IMUviewer.o: src/IMUviewer.cpp.o
+.PHONY : src/IMUviewer.o
+
+# target to build an object file
+src/IMUviewer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_viewer.dir/build.make CMakeFiles/IMU_viewer.dir/src/IMUviewer.cpp.o
+.PHONY : src/IMUviewer.cpp.o
+
+src/IMUviewer.i: src/IMUviewer.cpp.i
+.PHONY : src/IMUviewer.i
+
+# target to preprocess a source file
+src/IMUviewer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_viewer.dir/build.make CMakeFiles/IMU_viewer.dir/src/IMUviewer.cpp.i
+.PHONY : src/IMUviewer.cpp.i
+
+src/IMUviewer.s: src/IMUviewer.cpp.s
+.PHONY : src/IMUviewer.s
+
+# target to generate assembly for a file
+src/IMUviewer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_viewer.dir/build.make CMakeFiles/IMU_viewer.dir/src/IMUviewer.cpp.s
+.PHONY : src/IMUviewer.cpp.s
 
 src/receiver.o: src/receiver.cpp.o
 .PHONY : src/receiver.o
@@ -210,9 +452,38 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... IMU_server"
+	@echo "... IMU_viewer"
+	@echo "... ui_lib"
+	@echo "... external/imgui/backends/imgui_impl_glfw.o"
+	@echo "... external/imgui/backends/imgui_impl_glfw.i"
+	@echo "... external/imgui/backends/imgui_impl_glfw.s"
+	@echo "... external/imgui/backends/imgui_impl_opengl3.o"
+	@echo "... external/imgui/backends/imgui_impl_opengl3.i"
+	@echo "... external/imgui/backends/imgui_impl_opengl3.s"
+	@echo "... external/imgui/imgui.o"
+	@echo "... external/imgui/imgui.i"
+	@echo "... external/imgui/imgui.s"
+	@echo "... external/imgui/imgui_draw.o"
+	@echo "... external/imgui/imgui_draw.i"
+	@echo "... external/imgui/imgui_draw.s"
+	@echo "... external/imgui/imgui_tables.o"
+	@echo "... external/imgui/imgui_tables.i"
+	@echo "... external/imgui/imgui_tables.s"
+	@echo "... external/imgui/imgui_widgets.o"
+	@echo "... external/imgui/imgui_widgets.i"
+	@echo "... external/imgui/imgui_widgets.s"
+	@echo "... external/implot/implot.o"
+	@echo "... external/implot/implot.i"
+	@echo "... external/implot/implot.s"
+	@echo "... external/implot/implot_items.o"
+	@echo "... external/implot/implot_items.i"
+	@echo "... external/implot/implot_items.s"
 	@echo "... src/IMUsample.o"
 	@echo "... src/IMUsample.i"
 	@echo "... src/IMUsample.s"
+	@echo "... src/IMUviewer.o"
+	@echo "... src/IMUviewer.i"
+	@echo "... src/IMUviewer.s"
 	@echo "... src/receiver.o"
 	@echo "... src/receiver.i"
 	@echo "... src/receiver.s"

@@ -1,3 +1,5 @@
+/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles/ui_lib.dir
+/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles/IMU_viewer.dir
 /Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles/IMU_server.dir
 /Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles/edit_cache.dir
 /Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles/rebuild_cache.dir

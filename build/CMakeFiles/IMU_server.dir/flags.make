@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/heziqin/Desktop/SLAM/IMU_denoise/include -isystem /Users/heziqin/miniconda3/include
+CXX_INCLUDES = -I/Users/heziqin/Desktop/SLAM/IMU_denoise/include
 
 CXX_FLAGS = 
 
