@@ -96,6 +96,7 @@ IMU_viewer_EXTERNAL_OBJECTS =
 IMU_viewer: CMakeFiles/IMU_viewer.dir/src/IMUviewer.cpp.o
 IMU_viewer: CMakeFiles/IMU_viewer.dir/build.make
 IMU_viewer: libui_lib.a
+IMU_viewer: libreceiver_lib.a
 IMU_viewer: /usr/local/lib/libglfw.3.4.dylib
 IMU_viewer: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework
 IMU_viewer: CMakeFiles/IMU_viewer.dir/link.txt

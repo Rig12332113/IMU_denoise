@@ -130,6 +130,19 @@ ui_lib/fast:
 .PHONY : ui_lib/fast
 
 #=============================================================================
+# Target rules for targets named receiver_lib
+
+# Build rule for target.
+receiver_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 receiver_lib
+.PHONY : receiver_lib
+
+# fast build rule for target.
+receiver_lib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver_lib.dir/build.make CMakeFiles/receiver_lib.dir/build
+.PHONY : receiver_lib/fast
+
+#=============================================================================
 # Target rules for targets named IMU_viewer
 
 # Build rule for target.
@@ -352,7 +365,7 @@ src/IMUsample.o: src/IMUsample.cpp.o
 
 # target to build an object file
 src/IMUsample.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_server.dir/build.make CMakeFiles/IMU_server.dir/src/IMUsample.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver_lib.dir/build.make CMakeFiles/receiver_lib.dir/src/IMUsample.cpp.o
 .PHONY : src/IMUsample.cpp.o
 
 src/IMUsample.i: src/IMUsample.cpp.i
@@ -360,7 +373,7 @@ src/IMUsample.i: src/IMUsample.cpp.i
 
 # target to preprocess a source file
 src/IMUsample.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_server.dir/build.make CMakeFiles/IMU_server.dir/src/IMUsample.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver_lib.dir/build.make CMakeFiles/receiver_lib.dir/src/IMUsample.cpp.i
 .PHONY : src/IMUsample.cpp.i
 
 src/IMUsample.s: src/IMUsample.cpp.s
@@ -368,8 +381,32 @@ src/IMUsample.s: src/IMUsample.cpp.s
 
 # target to generate assembly for a file
 src/IMUsample.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_server.dir/build.make CMakeFiles/IMU_server.dir/src/IMUsample.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver_lib.dir/build.make CMakeFiles/receiver_lib.dir/src/IMUsample.cpp.s
 .PHONY : src/IMUsample.cpp.s
+
+src/IMUserver.o: src/IMUserver.cpp.o
+.PHONY : src/IMUserver.o
+
+# target to build an object file
+src/IMUserver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_server.dir/build.make CMakeFiles/IMU_server.dir/src/IMUserver.cpp.o
+.PHONY : src/IMUserver.cpp.o
+
+src/IMUserver.i: src/IMUserver.cpp.i
+.PHONY : src/IMUserver.i
+
+# target to preprocess a source file
+src/IMUserver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_server.dir/build.make CMakeFiles/IMU_server.dir/src/IMUserver.cpp.i
+.PHONY : src/IMUserver.cpp.i
+
+src/IMUserver.s: src/IMUserver.cpp.s
+.PHONY : src/IMUserver.s
+
+# target to generate assembly for a file
+src/IMUserver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_server.dir/build.make CMakeFiles/IMU_server.dir/src/IMUserver.cpp.s
+.PHONY : src/IMUserver.cpp.s
 
 src/IMUviewer.o: src/IMUviewer.cpp.o
 .PHONY : src/IMUviewer.o
@@ -400,7 +437,7 @@ src/receiver.o: src/receiver.cpp.o
 
 # target to build an object file
 src/receiver.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_server.dir/build.make CMakeFiles/IMU_server.dir/src/receiver.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver_lib.dir/build.make CMakeFiles/receiver_lib.dir/src/receiver.cpp.o
 .PHONY : src/receiver.cpp.o
 
 src/receiver.i: src/receiver.cpp.i
@@ -408,7 +445,7 @@ src/receiver.i: src/receiver.cpp.i
 
 # target to preprocess a source file
 src/receiver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_server.dir/build.make CMakeFiles/IMU_server.dir/src/receiver.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver_lib.dir/build.make CMakeFiles/receiver_lib.dir/src/receiver.cpp.i
 .PHONY : src/receiver.cpp.i
 
 src/receiver.s: src/receiver.cpp.s
@@ -416,7 +453,7 @@ src/receiver.s: src/receiver.cpp.s
 
 # target to generate assembly for a file
 src/receiver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_server.dir/build.make CMakeFiles/IMU_server.dir/src/receiver.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver_lib.dir/build.make CMakeFiles/receiver_lib.dir/src/receiver.cpp.s
 .PHONY : src/receiver.cpp.s
 
 src/waveletDenoiser.o: src/waveletDenoiser.cpp.o
@@ -424,7 +461,7 @@ src/waveletDenoiser.o: src/waveletDenoiser.cpp.o
 
 # target to build an object file
 src/waveletDenoiser.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_server.dir/build.make CMakeFiles/IMU_server.dir/src/waveletDenoiser.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver_lib.dir/build.make CMakeFiles/receiver_lib.dir/src/waveletDenoiser.cpp.o
 .PHONY : src/waveletDenoiser.cpp.o
 
 src/waveletDenoiser.i: src/waveletDenoiser.cpp.i
@@ -432,7 +469,7 @@ src/waveletDenoiser.i: src/waveletDenoiser.cpp.i
 
 # target to preprocess a source file
 src/waveletDenoiser.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_server.dir/build.make CMakeFiles/IMU_server.dir/src/waveletDenoiser.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver_lib.dir/build.make CMakeFiles/receiver_lib.dir/src/waveletDenoiser.cpp.i
 .PHONY : src/waveletDenoiser.cpp.i
 
 src/waveletDenoiser.s: src/waveletDenoiser.cpp.s
@@ -440,7 +477,7 @@ src/waveletDenoiser.s: src/waveletDenoiser.cpp.s
 
 # target to generate assembly for a file
 src/waveletDenoiser.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_server.dir/build.make CMakeFiles/IMU_server.dir/src/waveletDenoiser.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver_lib.dir/build.make CMakeFiles/receiver_lib.dir/src/waveletDenoiser.cpp.s
 .PHONY : src/waveletDenoiser.cpp.s
 
 # Help Target
@@ -453,6 +490,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... IMU_server"
 	@echo "... IMU_viewer"
+	@echo "... receiver_lib"
 	@echo "... ui_lib"
 	@echo "... external/imgui/backends/imgui_impl_glfw.o"
 	@echo "... external/imgui/backends/imgui_impl_glfw.i"
@@ -481,6 +519,9 @@ help:
 	@echo "... src/IMUsample.o"
 	@echo "... src/IMUsample.i"
 	@echo "... src/IMUsample.s"
+	@echo "... src/IMUserver.o"
+	@echo "... src/IMUserver.i"
+	@echo "... src/IMUserver.s"
 	@echo "... src/IMUviewer.o"
 	@echo "... src/IMUviewer.i"
 	@echo "... src/IMUviewer.s"

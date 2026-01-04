@@ -25,31 +25,38 @@ target_include_directories(ui_lib PUBLIC
 )
 target_compile_definitions(ui_lib PUBLIC IMGUI_IMPL_OPENGL_LOADER_GL3W=0)
 
+# receiver_lib
+add_library(receiver_lib STATIC
+    src/receiver.cpp
+    src/IMUsample.cpp
+    src/waveletDenoiser.cpp
+)
+
+target_include_directories(receiver_lib PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
+
+target_link_libraries(receiver_lib PUBLIC
+    nlohmann_json::nlohmann_json
+)
+
 # IMU_viewer
 add_executable(IMU_viewer
     src/IMUviewer.cpp
 )
-target_include_directories(IMU_viewer PRIVATE
-    ${CMAKE_CURRENT_SOURCE_DIR}/include
-)
+
 target_link_libraries(IMU_viewer PRIVATE
     ui_lib
+    receiver_lib
     glfw
     OpenGL::GL
 )
 
 # IMU_server
 add_executable(IMU_server
-    src/receiver.cpp
-    src/IMUsample.cpp
-    src/waveletDenoiser.cpp
+    src/IMUserver.cpp
 )
 
-target_include_directories(IMU_server
-    PRIVATE
-        ${CMAKE_CURRENT_SOURCE_DIR}/include
-)
-
-target_link_libraries(IMU_server
-    PRIVATE nlohmann_json::nlohmann_json
+target_link_libraries(IMU_server PRIVATE
+    receiver_lib
 )

@@ -1,1 +1,1 @@
-/usr/bin/c++ -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/IMU_viewer.dir/src/IMUviewer.cpp.o -o IMU_viewer  -Wl,-rpath,/usr/local/lib libui_lib.a /usr/local/lib/libglfw.3.4.dylib -framework OpenGL
+/usr/bin/c++ -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/IMU_viewer.dir/src/IMUviewer.cpp.o -o IMU_viewer  -Wl,-rpath,/usr/local/lib libui_lib.a libreceiver_lib.a /usr/local/lib/libglfw.3.4.dylib -framework OpenGL

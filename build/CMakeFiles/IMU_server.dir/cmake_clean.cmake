@@ -1,10 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/IMU_server.dir/src/IMUsample.cpp.o"
-  "CMakeFiles/IMU_server.dir/src/IMUsample.cpp.o.d"
-  "CMakeFiles/IMU_server.dir/src/receiver.cpp.o"
-  "CMakeFiles/IMU_server.dir/src/receiver.cpp.o.d"
-  "CMakeFiles/IMU_server.dir/src/waveletDenoiser.cpp.o"
-  "CMakeFiles/IMU_server.dir/src/waveletDenoiser.cpp.o.d"
+  "CMakeFiles/IMU_server.dir/src/IMUserver.cpp.o"
+  "CMakeFiles/IMU_server.dir/src/IMUserver.cpp.o.d"
   "IMU_server"
   "IMU_server.pdb"
 )

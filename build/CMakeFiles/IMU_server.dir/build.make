@@ -72,63 +72,32 @@ include CMakeFiles/IMU_server.dir/flags.make
 CMakeFiles/IMU_server.dir/codegen:
 .PHONY : CMakeFiles/IMU_server.dir/codegen
 
-CMakeFiles/IMU_server.dir/src/receiver.cpp.o: CMakeFiles/IMU_server.dir/flags.make
-CMakeFiles/IMU_server.dir/src/receiver.cpp.o: /Users/heziqin/Desktop/SLAM/IMU_denoise/src/receiver.cpp
-CMakeFiles/IMU_server.dir/src/receiver.cpp.o: CMakeFiles/IMU_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/IMU_server.dir/src/receiver.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IMU_server.dir/src/receiver.cpp.o -MF CMakeFiles/IMU_server.dir/src/receiver.cpp.o.d -o CMakeFiles/IMU_server.dir/src/receiver.cpp.o -c /Users/heziqin/Desktop/SLAM/IMU_denoise/src/receiver.cpp
+CMakeFiles/IMU_server.dir/src/IMUserver.cpp.o: CMakeFiles/IMU_server.dir/flags.make
+CMakeFiles/IMU_server.dir/src/IMUserver.cpp.o: /Users/heziqin/Desktop/SLAM/IMU_denoise/src/IMUserver.cpp
+CMakeFiles/IMU_server.dir/src/IMUserver.cpp.o: CMakeFiles/IMU_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/IMU_server.dir/src/IMUserver.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IMU_server.dir/src/IMUserver.cpp.o -MF CMakeFiles/IMU_server.dir/src/IMUserver.cpp.o.d -o CMakeFiles/IMU_server.dir/src/IMUserver.cpp.o -c /Users/heziqin/Desktop/SLAM/IMU_denoise/src/IMUserver.cpp
 
-CMakeFiles/IMU_server.dir/src/receiver.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/IMU_server.dir/src/receiver.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/heziqin/Desktop/SLAM/IMU_denoise/src/receiver.cpp > CMakeFiles/IMU_server.dir/src/receiver.cpp.i
+CMakeFiles/IMU_server.dir/src/IMUserver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/IMU_server.dir/src/IMUserver.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/heziqin/Desktop/SLAM/IMU_denoise/src/IMUserver.cpp > CMakeFiles/IMU_server.dir/src/IMUserver.cpp.i
 
-CMakeFiles/IMU_server.dir/src/receiver.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IMU_server.dir/src/receiver.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/heziqin/Desktop/SLAM/IMU_denoise/src/receiver.cpp -o CMakeFiles/IMU_server.dir/src/receiver.cpp.s
-
-CMakeFiles/IMU_server.dir/src/IMUsample.cpp.o: CMakeFiles/IMU_server.dir/flags.make
-CMakeFiles/IMU_server.dir/src/IMUsample.cpp.o: /Users/heziqin/Desktop/SLAM/IMU_denoise/src/IMUsample.cpp
-CMakeFiles/IMU_server.dir/src/IMUsample.cpp.o: CMakeFiles/IMU_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/IMU_server.dir/src/IMUsample.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IMU_server.dir/src/IMUsample.cpp.o -MF CMakeFiles/IMU_server.dir/src/IMUsample.cpp.o.d -o CMakeFiles/IMU_server.dir/src/IMUsample.cpp.o -c /Users/heziqin/Desktop/SLAM/IMU_denoise/src/IMUsample.cpp
-
-CMakeFiles/IMU_server.dir/src/IMUsample.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/IMU_server.dir/src/IMUsample.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/heziqin/Desktop/SLAM/IMU_denoise/src/IMUsample.cpp > CMakeFiles/IMU_server.dir/src/IMUsample.cpp.i
-
-CMakeFiles/IMU_server.dir/src/IMUsample.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IMU_server.dir/src/IMUsample.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/heziqin/Desktop/SLAM/IMU_denoise/src/IMUsample.cpp -o CMakeFiles/IMU_server.dir/src/IMUsample.cpp.s
-
-CMakeFiles/IMU_server.dir/src/waveletDenoiser.cpp.o: CMakeFiles/IMU_server.dir/flags.make
-CMakeFiles/IMU_server.dir/src/waveletDenoiser.cpp.o: /Users/heziqin/Desktop/SLAM/IMU_denoise/src/waveletDenoiser.cpp
-CMakeFiles/IMU_server.dir/src/waveletDenoiser.cpp.o: CMakeFiles/IMU_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/IMU_server.dir/src/waveletDenoiser.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IMU_server.dir/src/waveletDenoiser.cpp.o -MF CMakeFiles/IMU_server.dir/src/waveletDenoiser.cpp.o.d -o CMakeFiles/IMU_server.dir/src/waveletDenoiser.cpp.o -c /Users/heziqin/Desktop/SLAM/IMU_denoise/src/waveletDenoiser.cpp
-
-CMakeFiles/IMU_server.dir/src/waveletDenoiser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/IMU_server.dir/src/waveletDenoiser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/heziqin/Desktop/SLAM/IMU_denoise/src/waveletDenoiser.cpp > CMakeFiles/IMU_server.dir/src/waveletDenoiser.cpp.i
-
-CMakeFiles/IMU_server.dir/src/waveletDenoiser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IMU_server.dir/src/waveletDenoiser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/heziqin/Desktop/SLAM/IMU_denoise/src/waveletDenoiser.cpp -o CMakeFiles/IMU_server.dir/src/waveletDenoiser.cpp.s
+CMakeFiles/IMU_server.dir/src/IMUserver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IMU_server.dir/src/IMUserver.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/heziqin/Desktop/SLAM/IMU_denoise/src/IMUserver.cpp -o CMakeFiles/IMU_server.dir/src/IMUserver.cpp.s
 
 # Object files for target IMU_server
 IMU_server_OBJECTS = \
-"CMakeFiles/IMU_server.dir/src/receiver.cpp.o" \
-"CMakeFiles/IMU_server.dir/src/IMUsample.cpp.o" \
-"CMakeFiles/IMU_server.dir/src/waveletDenoiser.cpp.o"
+"CMakeFiles/IMU_server.dir/src/IMUserver.cpp.o"
 
 # External object files for target IMU_server
 IMU_server_EXTERNAL_OBJECTS =
 
-IMU_server: CMakeFiles/IMU_server.dir/src/receiver.cpp.o
-IMU_server: CMakeFiles/IMU_server.dir/src/IMUsample.cpp.o
-IMU_server: CMakeFiles/IMU_server.dir/src/waveletDenoiser.cpp.o
+IMU_server: CMakeFiles/IMU_server.dir/src/IMUserver.cpp.o
 IMU_server: CMakeFiles/IMU_server.dir/build.make
+IMU_server: libreceiver_lib.a
 IMU_server: CMakeFiles/IMU_server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable IMU_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable IMU_server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/IMU_server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GL3W=0
 
-CXX_INCLUDES = -I/Users/heziqin/Desktop/SLAM/IMU_denoise/include -I/Users/heziqin/Desktop/SLAM/IMU_denoise/external/imgui -I/Users/heziqin/Desktop/SLAM/IMU_denoise/external/imgui/backends -I/Users/heziqin/Desktop/SLAM/IMU_denoise/external/implot -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
+CXX_INCLUDES = -I/Users/heziqin/Desktop/SLAM/IMU_denoise/external/imgui -I/Users/heziqin/Desktop/SLAM/IMU_denoise/external/imgui/backends -I/Users/heziqin/Desktop/SLAM/IMU_denoise/external/implot -I/Users/heziqin/Desktop/SLAM/IMU_denoise/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
 
 CXX_FLAGS = 
 
