@@ -836,6 +836,7 @@ CMakeFiles/IMU_viewer.dir/src/IMUviewer.cpp.o: /Users/heziqin/Desktop/SLAM/IMU_d
   /Users/heziqin/Desktop/SLAM/IMU_denoise/external/implot/implot.h \
   /Users/heziqin/Desktop/SLAM/IMU_denoise/include/IMUsample.hpp \
   /Users/heziqin/Desktop/SLAM/IMU_denoise/include/receiver.hpp \
+  /Users/heziqin/Desktop/SLAM/IMU_denoise/include/waveletDenoiser.hpp \
   /usr/local/include/GLFW/glfw3.h
 
 
@@ -898,6 +899,8 @@ CMakeFiles/IMU_viewer.dir/src/IMUviewer.cpp.o: /Users/heziqin/Desktop/SLAM/IMU_d
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_equality_comparable.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/select.h:
+
+/Users/heziqin/Desktop/SLAM/IMU_denoise/include/waveletDenoiser.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/resource.h:
 

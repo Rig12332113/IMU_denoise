@@ -837,5 +837,6 @@ CMakeFiles/IMU_viewer.dir/src/IMUviewer.cpp.o
  /Users/heziqin/Desktop/SLAM/IMU_denoise/external/implot/implot.h
  /Users/heziqin/Desktop/SLAM/IMU_denoise/include/IMUsample.hpp
  /Users/heziqin/Desktop/SLAM/IMU_denoise/include/receiver.hpp
+ /Users/heziqin/Desktop/SLAM/IMU_denoise/include/waveletDenoiser.hpp
  /usr/local/include/GLFW/glfw3.h
 

@@ -834,4 +834,5 @@ CMakeFiles/IMU_viewer.dir/src/IMUviewer.cpp.o: \
   /Users/heziqin/Desktop/SLAM/IMU_denoise/external/implot/implot.h \
   /Users/heziqin/Desktop/SLAM/IMU_denoise/include/receiver.hpp \
   /Users/heziqin/Desktop/SLAM/IMU_denoise/include/IMUsample.hpp \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
+  /Users/heziqin/Desktop/SLAM/IMU_denoise/include/waveletDenoiser.hpp

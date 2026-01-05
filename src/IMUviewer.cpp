@@ -21,6 +21,7 @@
 #include "implot.h"
 
 #include "receiver.hpp"
+#include "waveletDenoiser.hpp"
 
 // ----------------------
 // Ring buffer (last 150)
@@ -51,7 +52,8 @@ struct Ring150 {
 };
 
 struct ImuRawBuffers {
-    Ring150 ax, ay, az;
+    Ring150 ax, ay, az;       // raw
+    Ring150 ax_d, ay_d, az_d;  // denoised
     std::mutex m;
 };
 
@@ -119,6 +121,10 @@ static void tcp_receiver_thread(ImuRawBuffers* buf, std::atomic<bool>* running) 
 
     std::fprintf(stderr, "[viewer] client connected\n");
 
+    // Denoiser runs in the receiver thread to preserve sample order.
+    // It outputs in hop-sized chunks; we push each output sample into ax_d/ay_d/az_d.
+    denoiser dn;
+
     std::string accum;
     accum.reserve(4096);
 
@@ -155,15 +161,40 @@ static void tcp_receiver_thread(ImuRawBuffers* buf, std::atomic<bool>* running) 
             std::string line = accum.substr(0, pos);
             accum.erase(0, pos + 1);
 
+            // Handle CRLF if present
+            if (!line.empty() && line.back() == '\r') line.pop_back();
+            if (line.empty()) continue;
+
             IMUsample sample;
             if (!parse_one_quat_accg(line, sample)) continue;
 
             const auto a = sample.getAccG(); // accel only
+
+            // Feed raw sample to denoiser (no locks).
+            dn.push(sample.getTimestamp(), a[0], a[1], a[2]);
+
+            // Push raw sample immediately.
             {
                 std::lock_guard<std::mutex> lk(buf->m);
                 buf->ax.push(static_cast<float>(a[0]));
                 buf->ay.push(static_cast<float>(a[1]));
                 buf->az.push(static_cast<float>(a[2]));
+            }
+
+            // Drain any available hop outputs and push to denoised buffers.
+            // Note: denoiser::denoise() returns true when a new hop block is ready.
+            while (dn.denoise()) {
+                const auto& ox = dn.out_x();
+                const auto& oy = dn.out_y();
+                const auto& oz = dn.out_z();
+                {
+                    std::lock_guard<std::mutex> lk(buf->m);
+                    for (int k = 0; k < denoiser::hop; ++k) {
+                        buf->ax_d.push(static_cast<float>(ox[k]));
+                        buf->ay_d.push(static_cast<float>(oy[k]));
+                        buf->az_d.push(static_cast<float>(oz[k]));
+                    }
+                }
             }
         }
     }
@@ -223,10 +254,12 @@ int main() {
 
     // plotting snapshots
     std::array<float, N> ax_s{}, ay_s{}, az_s{};
+    std::array<float, N> axd_s{}, ayd_s{}, azd_s{};
     int count = 0;
+    int count_d = 0;
 
     // Y-axis range for acc_g units (adjust if needed)
-    float y_max = 4.0f;
+    float y_max = 2.0f;
 
     // ----------------------
     // Main UI loop
@@ -240,6 +273,10 @@ int main() {
             count = raw.ax.snapshot(ax_s);
             raw.ay.snapshot(ay_s);
             raw.az.snapshot(az_s);
+
+            count_d = raw.ax_d.snapshot(axd_s);
+            raw.ay_d.snapshot(ayd_s);
+            raw.az_d.snapshot(azd_s);
         }
 
         // Window 1 plot
@@ -262,13 +299,17 @@ int main() {
         ImGui::Begin("IMU Raw Accel", nullptr, flags);
         ImGui::Text("Listening on TCP port %d (stop IMU_server if it uses the same port).", PORT);
         ImGui::Text("Samples available: %d / %d", count, N);
-        ImGui::SliderFloat("Y_max", &y_max, 0.0f, 10.0f);
+
+        static bool show_denoised = true;
+        ImGui::SliderFloat("Y_max", &y_max, 0.0f, 5.0f);
+        ImGui::Checkbox("Show denoised", &show_denoised);
 
         // ax
         if (ImPlot::BeginPlot("ax (g)", ImVec2(600, 180))) {
             ImPlot::SetupAxisLimits(ImAxis_X1, 0, N - 1, ImGuiCond_Always);
             ImPlot::SetupAxisLimits(ImAxis_Y1, -y_max, y_max, ImGuiCond_Always);
-            if (count > 1) ImPlot::PlotLine("ax", x.data(), ax_s.data(), count);
+            if (count > 1) ImPlot::PlotLine("raw", x.data(), ax_s.data(), count);
+            if (show_denoised && count_d > 1) ImPlot::PlotLine("den", x.data(), axd_s.data(), count_d);
             ImPlot::EndPlot();
         }
 
@@ -276,7 +317,8 @@ int main() {
         if (ImPlot::BeginPlot("ay (g)", ImVec2(600, 180))) {
             ImPlot::SetupAxisLimits(ImAxis_X1, 0, N - 1, ImGuiCond_Always);
             ImPlot::SetupAxisLimits(ImAxis_Y1, -y_max, y_max, ImGuiCond_Always);
-            if (count > 1) ImPlot::PlotLine("ay", x.data(), ay_s.data(), count);
+            if (count > 1) ImPlot::PlotLine("raw", x.data(), ay_s.data(), count);
+            if (show_denoised && count_d > 1) ImPlot::PlotLine("den", x.data(), ayd_s.data(), count_d);
             ImPlot::EndPlot();
         }
 
@@ -284,12 +326,13 @@ int main() {
         if (ImPlot::BeginPlot("az (g)", ImVec2(600, 180))) {
             ImPlot::SetupAxisLimits(ImAxis_X1, 0, N - 1, ImGuiCond_Always);
             ImPlot::SetupAxisLimits(ImAxis_Y1, -y_max, y_max, ImGuiCond_Always);
-            if (count > 1) ImPlot::PlotLine("az", x.data(), az_s.data(), count);
+            if (count > 1) ImPlot::PlotLine("raw", x.data(), az_s.data(), count);
+            if (show_denoised && count_d > 1) ImPlot::PlotLine("den", x.data(), azd_s.data(), count_d);
             ImPlot::EndPlot();
         }
 
         ImGui::End();
-        
+
         // Window 2 numerical data
         ImGui::SetNextWindowPos(ImVec2(600, 0), ImGuiCond_Always);
         ImGui::SetNextWindowSize(ImVec2(300, 400), ImGuiCond_Always);
@@ -299,11 +342,22 @@ int main() {
             float ax_last = ax_s[count - 1];
             float ay_last = ay_s[count - 1];
             float az_last = az_s[count - 1];
+            ImGui::Text("RAW");
             ImGui::Text("ax: %.4f g", ax_last);
             ImGui::Text("ay: %.4f g", ay_last);
             ImGui::Text("az: %.4f g", az_last);
-        } 
-        else {
+
+            if (show_denoised && count_d > 0) {
+                float dax_last = axd_s[count_d - 1];
+                float day_last = ayd_s[count_d - 1];
+                float daz_last = azd_s[count_d - 1];
+                ImGui::Separator();
+                ImGui::Text("DENOISED (hop=%d)", denoiser::hop);
+                ImGui::Text("ax: %.4f g", dax_last);
+                ImGui::Text("ay: %.4f g", day_last);
+                ImGui::Text("az: %.4f g", daz_last);
+            }
+        } else {
             ImGui::Text("Waiting for data...");
         }
         ImGui::End();
