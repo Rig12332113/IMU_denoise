@@ -20,7 +20,7 @@
 #include "imgui_impl_opengl3.h"
 #include "implot.h"
 
-#include "receiver.hpp"
+#include "IMUreceiver.hpp"
 #include "waveletDenoiser.hpp"
 
 // ----------------------
@@ -166,7 +166,7 @@ static void tcp_receiver_thread(ImuRawBuffers* buf, std::atomic<bool>* running) 
             if (line.empty()) continue;
 
             IMUsample sample;
-            if (!parse_one_quat_accg(line, sample)) continue;
+            if (!IMU::parse_one_quat_accg(line, sample)) continue;
 
             const auto a = sample.getAccG(); // accel only
 

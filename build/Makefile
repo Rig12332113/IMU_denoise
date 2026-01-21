@@ -168,6 +168,19 @@ IMU_server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_server.dir/build.make CMakeFiles/IMU_server.dir/build
 .PHONY : IMU_server/fast
 
+#=============================================================================
+# Target rules for targets named GPS_server
+
+# Build rule for target.
+GPS_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GPS_server
+.PHONY : GPS_server
+
+# fast build rule for target.
+GPS_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GPS_server.dir/build.make CMakeFiles/GPS_server.dir/build
+.PHONY : GPS_server/fast
+
 external/imgui/backends/imgui_impl_glfw.o: external/imgui/backends/imgui_impl_glfw.cpp.o
 .PHONY : external/imgui/backends/imgui_impl_glfw.o
 
@@ -360,6 +373,102 @@ external/implot/implot_items.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_lib.dir/build.make CMakeFiles/ui_lib.dir/external/implot/implot_items.cpp.s
 .PHONY : external/implot/implot_items.cpp.s
 
+src/GPSreceiver.o: src/GPSreceiver.cpp.o
+.PHONY : src/GPSreceiver.o
+
+# target to build an object file
+src/GPSreceiver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver_lib.dir/build.make CMakeFiles/receiver_lib.dir/src/GPSreceiver.cpp.o
+.PHONY : src/GPSreceiver.cpp.o
+
+src/GPSreceiver.i: src/GPSreceiver.cpp.i
+.PHONY : src/GPSreceiver.i
+
+# target to preprocess a source file
+src/GPSreceiver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver_lib.dir/build.make CMakeFiles/receiver_lib.dir/src/GPSreceiver.cpp.i
+.PHONY : src/GPSreceiver.cpp.i
+
+src/GPSreceiver.s: src/GPSreceiver.cpp.s
+.PHONY : src/GPSreceiver.s
+
+# target to generate assembly for a file
+src/GPSreceiver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver_lib.dir/build.make CMakeFiles/receiver_lib.dir/src/GPSreceiver.cpp.s
+.PHONY : src/GPSreceiver.cpp.s
+
+src/GPSsample.o: src/GPSsample.cpp.o
+.PHONY : src/GPSsample.o
+
+# target to build an object file
+src/GPSsample.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver_lib.dir/build.make CMakeFiles/receiver_lib.dir/src/GPSsample.cpp.o
+.PHONY : src/GPSsample.cpp.o
+
+src/GPSsample.i: src/GPSsample.cpp.i
+.PHONY : src/GPSsample.i
+
+# target to preprocess a source file
+src/GPSsample.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver_lib.dir/build.make CMakeFiles/receiver_lib.dir/src/GPSsample.cpp.i
+.PHONY : src/GPSsample.cpp.i
+
+src/GPSsample.s: src/GPSsample.cpp.s
+.PHONY : src/GPSsample.s
+
+# target to generate assembly for a file
+src/GPSsample.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver_lib.dir/build.make CMakeFiles/receiver_lib.dir/src/GPSsample.cpp.s
+.PHONY : src/GPSsample.cpp.s
+
+src/GPSserver.o: src/GPSserver.cpp.o
+.PHONY : src/GPSserver.o
+
+# target to build an object file
+src/GPSserver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GPS_server.dir/build.make CMakeFiles/GPS_server.dir/src/GPSserver.cpp.o
+.PHONY : src/GPSserver.cpp.o
+
+src/GPSserver.i: src/GPSserver.cpp.i
+.PHONY : src/GPSserver.i
+
+# target to preprocess a source file
+src/GPSserver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GPS_server.dir/build.make CMakeFiles/GPS_server.dir/src/GPSserver.cpp.i
+.PHONY : src/GPSserver.cpp.i
+
+src/GPSserver.s: src/GPSserver.cpp.s
+.PHONY : src/GPSserver.s
+
+# target to generate assembly for a file
+src/GPSserver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GPS_server.dir/build.make CMakeFiles/GPS_server.dir/src/GPSserver.cpp.s
+.PHONY : src/GPSserver.cpp.s
+
+src/IMUreceiver.o: src/IMUreceiver.cpp.o
+.PHONY : src/IMUreceiver.o
+
+# target to build an object file
+src/IMUreceiver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver_lib.dir/build.make CMakeFiles/receiver_lib.dir/src/IMUreceiver.cpp.o
+.PHONY : src/IMUreceiver.cpp.o
+
+src/IMUreceiver.i: src/IMUreceiver.cpp.i
+.PHONY : src/IMUreceiver.i
+
+# target to preprocess a source file
+src/IMUreceiver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver_lib.dir/build.make CMakeFiles/receiver_lib.dir/src/IMUreceiver.cpp.i
+.PHONY : src/IMUreceiver.cpp.i
+
+src/IMUreceiver.s: src/IMUreceiver.cpp.s
+.PHONY : src/IMUreceiver.s
+
+# target to generate assembly for a file
+src/IMUreceiver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver_lib.dir/build.make CMakeFiles/receiver_lib.dir/src/IMUreceiver.cpp.s
+.PHONY : src/IMUreceiver.cpp.s
+
 src/IMUsample.o: src/IMUsample.cpp.o
 .PHONY : src/IMUsample.o
 
@@ -432,30 +541,6 @@ src/IMUviewer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IMU_viewer.dir/build.make CMakeFiles/IMU_viewer.dir/src/IMUviewer.cpp.s
 .PHONY : src/IMUviewer.cpp.s
 
-src/receiver.o: src/receiver.cpp.o
-.PHONY : src/receiver.o
-
-# target to build an object file
-src/receiver.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver_lib.dir/build.make CMakeFiles/receiver_lib.dir/src/receiver.cpp.o
-.PHONY : src/receiver.cpp.o
-
-src/receiver.i: src/receiver.cpp.i
-.PHONY : src/receiver.i
-
-# target to preprocess a source file
-src/receiver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver_lib.dir/build.make CMakeFiles/receiver_lib.dir/src/receiver.cpp.i
-.PHONY : src/receiver.cpp.i
-
-src/receiver.s: src/receiver.cpp.s
-.PHONY : src/receiver.s
-
-# target to generate assembly for a file
-src/receiver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/receiver_lib.dir/build.make CMakeFiles/receiver_lib.dir/src/receiver.cpp.s
-.PHONY : src/receiver.cpp.s
-
 src/waveletDenoiser.o: src/waveletDenoiser.cpp.o
 .PHONY : src/waveletDenoiser.o
 
@@ -488,6 +573,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... GPS_server"
 	@echo "... IMU_server"
 	@echo "... IMU_viewer"
 	@echo "... receiver_lib"
@@ -516,6 +602,18 @@ help:
 	@echo "... external/implot/implot_items.o"
 	@echo "... external/implot/implot_items.i"
 	@echo "... external/implot/implot_items.s"
+	@echo "... src/GPSreceiver.o"
+	@echo "... src/GPSreceiver.i"
+	@echo "... src/GPSreceiver.s"
+	@echo "... src/GPSsample.o"
+	@echo "... src/GPSsample.i"
+	@echo "... src/GPSsample.s"
+	@echo "... src/GPSserver.o"
+	@echo "... src/GPSserver.i"
+	@echo "... src/GPSserver.s"
+	@echo "... src/IMUreceiver.o"
+	@echo "... src/IMUreceiver.i"
+	@echo "... src/IMUreceiver.s"
 	@echo "... src/IMUsample.o"
 	@echo "... src/IMUsample.i"
 	@echo "... src/IMUsample.s"
@@ -525,9 +623,6 @@ help:
 	@echo "... src/IMUviewer.o"
 	@echo "... src/IMUviewer.i"
 	@echo "... src/IMUviewer.s"
-	@echo "... src/receiver.o"
-	@echo "... src/receiver.i"
-	@echo "... src/receiver.s"
 	@echo "... src/waveletDenoiser.o"
 	@echo "... src/waveletDenoiser.i"
 	@echo "... src/waveletDenoiser.s"

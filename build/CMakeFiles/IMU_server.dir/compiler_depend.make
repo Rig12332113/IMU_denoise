@@ -818,8 +818,8 @@ CMakeFiles/IMU_server.dir/src/IMUserver.cpp.o: /Users/heziqin/Desktop/SLAM/IMU_d
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
+  /Users/heziqin/Desktop/SLAM/IMU_denoise/include/IMUreceiver.hpp \
   /Users/heziqin/Desktop/SLAM/IMU_denoise/include/IMUsample.hpp \
-  /Users/heziqin/Desktop/SLAM/IMU_denoise/include/receiver.hpp \
   /usr/local/include/nlohmann/adl_serializer.hpp \
   /usr/local/include/nlohmann/byte_container_with_subtype.hpp \
   /usr/local/include/nlohmann/detail/abi_macros.hpp \
@@ -1267,6 +1267,8 @@ CMakeFiles/IMU_server.dir/src/IMUserver.cpp.o: /Users/heziqin/Desktop/SLAM/IMU_d
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_select.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/clocale:
+
+/Users/heziqin/Desktop/SLAM/IMU_denoise/include/IMUreceiver.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert:
 
@@ -1879,8 +1881,6 @@ CMakeFiles/IMU_server.dir/src/IMUserver.cpp.o: /Users/heziqin/Desktop/SLAM/IMU_d
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ios.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_fd_set.h:
-
-/Users/heziqin/Desktop/SLAM/IMU_denoise/include/receiver.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm:
 

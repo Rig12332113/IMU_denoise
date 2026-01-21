@@ -834,8 +834,8 @@ CMakeFiles/IMU_viewer.dir/src/IMUviewer.cpp.o: /Users/heziqin/Desktop/SLAM/IMU_d
   /Users/heziqin/Desktop/SLAM/IMU_denoise/external/imgui/imconfig.h \
   /Users/heziqin/Desktop/SLAM/IMU_denoise/external/imgui/imgui.h \
   /Users/heziqin/Desktop/SLAM/IMU_denoise/external/implot/implot.h \
+  /Users/heziqin/Desktop/SLAM/IMU_denoise/include/IMUreceiver.hpp \
   /Users/heziqin/Desktop/SLAM/IMU_denoise/include/IMUsample.hpp \
-  /Users/heziqin/Desktop/SLAM/IMU_denoise/include/receiver.hpp \
   /Users/heziqin/Desktop/SLAM/IMU_denoise/include/waveletDenoiser.hpp \
   /usr/local/include/GLFW/glfw3.h
 
@@ -843,6 +843,8 @@ CMakeFiles/IMU_viewer.dir/src/IMUviewer.cpp.o: /Users/heziqin/Desktop/SLAM/IMU_d
 /usr/local/include/GLFW/glfw3.h:
 
 /Users/heziqin/Desktop/SLAM/IMU_denoise/include/IMUsample.hpp:
+
+/Users/heziqin/Desktop/SLAM/IMU_denoise/include/IMUreceiver.hpp:
 
 /Users/heziqin/Desktop/SLAM/IMU_denoise/external/imgui/backends/imgui_impl_glfw.h:
 
@@ -1783,8 +1785,6 @@ CMakeFiles/IMU_viewer.dir/src/IMUviewer.cpp.o: /Users/heziqin/Desktop/SLAM/IMU_d
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ios.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_fd_set.h:
-
-/Users/heziqin/Desktop/SLAM/IMU_denoise/include/receiver.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm:
 

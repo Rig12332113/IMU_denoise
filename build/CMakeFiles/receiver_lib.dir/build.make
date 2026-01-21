@@ -72,19 +72,19 @@ include CMakeFiles/receiver_lib.dir/flags.make
 CMakeFiles/receiver_lib.dir/codegen:
 .PHONY : CMakeFiles/receiver_lib.dir/codegen
 
-CMakeFiles/receiver_lib.dir/src/receiver.cpp.o: CMakeFiles/receiver_lib.dir/flags.make
-CMakeFiles/receiver_lib.dir/src/receiver.cpp.o: /Users/heziqin/Desktop/SLAM/IMU_denoise/src/receiver.cpp
-CMakeFiles/receiver_lib.dir/src/receiver.cpp.o: CMakeFiles/receiver_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/receiver_lib.dir/src/receiver.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/receiver_lib.dir/src/receiver.cpp.o -MF CMakeFiles/receiver_lib.dir/src/receiver.cpp.o.d -o CMakeFiles/receiver_lib.dir/src/receiver.cpp.o -c /Users/heziqin/Desktop/SLAM/IMU_denoise/src/receiver.cpp
+CMakeFiles/receiver_lib.dir/src/IMUreceiver.cpp.o: CMakeFiles/receiver_lib.dir/flags.make
+CMakeFiles/receiver_lib.dir/src/IMUreceiver.cpp.o: /Users/heziqin/Desktop/SLAM/IMU_denoise/src/IMUreceiver.cpp
+CMakeFiles/receiver_lib.dir/src/IMUreceiver.cpp.o: CMakeFiles/receiver_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/receiver_lib.dir/src/IMUreceiver.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/receiver_lib.dir/src/IMUreceiver.cpp.o -MF CMakeFiles/receiver_lib.dir/src/IMUreceiver.cpp.o.d -o CMakeFiles/receiver_lib.dir/src/IMUreceiver.cpp.o -c /Users/heziqin/Desktop/SLAM/IMU_denoise/src/IMUreceiver.cpp
 
-CMakeFiles/receiver_lib.dir/src/receiver.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/receiver_lib.dir/src/receiver.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/heziqin/Desktop/SLAM/IMU_denoise/src/receiver.cpp > CMakeFiles/receiver_lib.dir/src/receiver.cpp.i
+CMakeFiles/receiver_lib.dir/src/IMUreceiver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/receiver_lib.dir/src/IMUreceiver.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/heziqin/Desktop/SLAM/IMU_denoise/src/IMUreceiver.cpp > CMakeFiles/receiver_lib.dir/src/IMUreceiver.cpp.i
 
-CMakeFiles/receiver_lib.dir/src/receiver.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/receiver_lib.dir/src/receiver.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/heziqin/Desktop/SLAM/IMU_denoise/src/receiver.cpp -o CMakeFiles/receiver_lib.dir/src/receiver.cpp.s
+CMakeFiles/receiver_lib.dir/src/IMUreceiver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/receiver_lib.dir/src/IMUreceiver.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/heziqin/Desktop/SLAM/IMU_denoise/src/IMUreceiver.cpp -o CMakeFiles/receiver_lib.dir/src/IMUreceiver.cpp.s
 
 CMakeFiles/receiver_lib.dir/src/IMUsample.cpp.o: CMakeFiles/receiver_lib.dir/flags.make
 CMakeFiles/receiver_lib.dir/src/IMUsample.cpp.o: /Users/heziqin/Desktop/SLAM/IMU_denoise/src/IMUsample.cpp
@@ -114,21 +114,53 @@ CMakeFiles/receiver_lib.dir/src/waveletDenoiser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/receiver_lib.dir/src/waveletDenoiser.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/heziqin/Desktop/SLAM/IMU_denoise/src/waveletDenoiser.cpp -o CMakeFiles/receiver_lib.dir/src/waveletDenoiser.cpp.s
 
+CMakeFiles/receiver_lib.dir/src/GPSreceiver.cpp.o: CMakeFiles/receiver_lib.dir/flags.make
+CMakeFiles/receiver_lib.dir/src/GPSreceiver.cpp.o: /Users/heziqin/Desktop/SLAM/IMU_denoise/src/GPSreceiver.cpp
+CMakeFiles/receiver_lib.dir/src/GPSreceiver.cpp.o: CMakeFiles/receiver_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/receiver_lib.dir/src/GPSreceiver.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/receiver_lib.dir/src/GPSreceiver.cpp.o -MF CMakeFiles/receiver_lib.dir/src/GPSreceiver.cpp.o.d -o CMakeFiles/receiver_lib.dir/src/GPSreceiver.cpp.o -c /Users/heziqin/Desktop/SLAM/IMU_denoise/src/GPSreceiver.cpp
+
+CMakeFiles/receiver_lib.dir/src/GPSreceiver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/receiver_lib.dir/src/GPSreceiver.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/heziqin/Desktop/SLAM/IMU_denoise/src/GPSreceiver.cpp > CMakeFiles/receiver_lib.dir/src/GPSreceiver.cpp.i
+
+CMakeFiles/receiver_lib.dir/src/GPSreceiver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/receiver_lib.dir/src/GPSreceiver.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/heziqin/Desktop/SLAM/IMU_denoise/src/GPSreceiver.cpp -o CMakeFiles/receiver_lib.dir/src/GPSreceiver.cpp.s
+
+CMakeFiles/receiver_lib.dir/src/GPSsample.cpp.o: CMakeFiles/receiver_lib.dir/flags.make
+CMakeFiles/receiver_lib.dir/src/GPSsample.cpp.o: /Users/heziqin/Desktop/SLAM/IMU_denoise/src/GPSsample.cpp
+CMakeFiles/receiver_lib.dir/src/GPSsample.cpp.o: CMakeFiles/receiver_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/receiver_lib.dir/src/GPSsample.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/receiver_lib.dir/src/GPSsample.cpp.o -MF CMakeFiles/receiver_lib.dir/src/GPSsample.cpp.o.d -o CMakeFiles/receiver_lib.dir/src/GPSsample.cpp.o -c /Users/heziqin/Desktop/SLAM/IMU_denoise/src/GPSsample.cpp
+
+CMakeFiles/receiver_lib.dir/src/GPSsample.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/receiver_lib.dir/src/GPSsample.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/heziqin/Desktop/SLAM/IMU_denoise/src/GPSsample.cpp > CMakeFiles/receiver_lib.dir/src/GPSsample.cpp.i
+
+CMakeFiles/receiver_lib.dir/src/GPSsample.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/receiver_lib.dir/src/GPSsample.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/heziqin/Desktop/SLAM/IMU_denoise/src/GPSsample.cpp -o CMakeFiles/receiver_lib.dir/src/GPSsample.cpp.s
+
 # Object files for target receiver_lib
 receiver_lib_OBJECTS = \
-"CMakeFiles/receiver_lib.dir/src/receiver.cpp.o" \
+"CMakeFiles/receiver_lib.dir/src/IMUreceiver.cpp.o" \
 "CMakeFiles/receiver_lib.dir/src/IMUsample.cpp.o" \
-"CMakeFiles/receiver_lib.dir/src/waveletDenoiser.cpp.o"
+"CMakeFiles/receiver_lib.dir/src/waveletDenoiser.cpp.o" \
+"CMakeFiles/receiver_lib.dir/src/GPSreceiver.cpp.o" \
+"CMakeFiles/receiver_lib.dir/src/GPSsample.cpp.o"
 
 # External object files for target receiver_lib
 receiver_lib_EXTERNAL_OBJECTS =
 
-libreceiver_lib.a: CMakeFiles/receiver_lib.dir/src/receiver.cpp.o
+libreceiver_lib.a: CMakeFiles/receiver_lib.dir/src/IMUreceiver.cpp.o
 libreceiver_lib.a: CMakeFiles/receiver_lib.dir/src/IMUsample.cpp.o
 libreceiver_lib.a: CMakeFiles/receiver_lib.dir/src/waveletDenoiser.cpp.o
+libreceiver_lib.a: CMakeFiles/receiver_lib.dir/src/GPSreceiver.cpp.o
+libreceiver_lib.a: CMakeFiles/receiver_lib.dir/src/GPSsample.cpp.o
 libreceiver_lib.a: CMakeFiles/receiver_lib.dir/build.make
 libreceiver_lib.a: CMakeFiles/receiver_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libreceiver_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/heziqin/Desktop/SLAM/IMU_denoise/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libreceiver_lib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/receiver_lib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/receiver_lib.dir/link.txt --verbose=$(VERBOSE)
 

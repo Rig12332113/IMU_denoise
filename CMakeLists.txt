@@ -27,9 +27,11 @@ target_compile_definitions(ui_lib PUBLIC IMGUI_IMPL_OPENGL_LOADER_GL3W=0)
 
 # receiver_lib
 add_library(receiver_lib STATIC
-    src/receiver.cpp
+    src/IMUreceiver.cpp
     src/IMUsample.cpp
     src/waveletDenoiser.cpp
+    src/GPSreceiver.cpp
+    src/GPSsample.cpp
 )
 
 target_include_directories(receiver_lib PUBLIC
@@ -58,5 +60,13 @@ add_executable(IMU_server
 )
 
 target_link_libraries(IMU_server PRIVATE
+    receiver_lib
+)
+
+# GPS_server
+add_executable(GPS_server
+    src/GPSserver.cpp
+)
+target_link_libraries(GPS_server PRIVATE
     receiver_lib
 )

@@ -8,7 +8,7 @@
 #include <sys/types.h> 
 #include <unistd.h>
 #include <nlohmann/json.hpp>
-#include "receiver.hpp"
+#include "IMUreceiver.hpp"
 
 int main() 
 { 
@@ -57,7 +57,7 @@ int main()
     else
         printf("server accept the client...\n"); 
   
-    process(connfd); 
+    IMU::process(connfd); 
   
     // After chatting close the socket 
     close(sockfd); 

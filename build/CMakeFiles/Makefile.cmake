@@ -134,4 +134,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/receiver_lib.dir/DependInfo.cmake"
   "CMakeFiles/IMU_viewer.dir/DependInfo.cmake"
   "CMakeFiles/IMU_server.dir/DependInfo.cmake"
+  "CMakeFiles/GPS_server.dir/DependInfo.cmake"
   )

@@ -70,7 +70,7 @@ void denoiser::denoise_axis_(std::array<double, windowSize>& w)
 
         const double T1 = 1.0 * T;
         const double T2 = 0.6 * T;
-        const double T3 = 0.3 * T;
+        const double T3 = 0.2 * T;
 
         soft_threshold_range(w, D1_start, D1_len, T1);
         soft_threshold_range(w, D2_start, D2_len, T2);
