@@ -1,8 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/receiver_lib.dir/src/GPSreceiver.cpp.o"
-  "CMakeFiles/receiver_lib.dir/src/GPSreceiver.cpp.o.d"
-  "CMakeFiles/receiver_lib.dir/src/GPSsample.cpp.o"
-  "CMakeFiles/receiver_lib.dir/src/GPSsample.cpp.o.d"
   "CMakeFiles/receiver_lib.dir/src/IMUreceiver.cpp.o"
   "CMakeFiles/receiver_lib.dir/src/IMUreceiver.cpp.o.d"
   "CMakeFiles/receiver_lib.dir/src/IMUsample.cpp.o"

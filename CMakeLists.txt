@@ -30,8 +30,6 @@ add_library(receiver_lib STATIC
     src/IMUreceiver.cpp
     src/IMUsample.cpp
     src/waveletDenoiser.cpp
-    src/GPSreceiver.cpp
-    src/GPSsample.cpp
 )
 
 target_include_directories(receiver_lib PUBLIC
@@ -40,18 +38,6 @@ target_include_directories(receiver_lib PUBLIC
 
 target_link_libraries(receiver_lib PUBLIC
     nlohmann_json::nlohmann_json
-)
-
-# IMU_viewer
-add_executable(IMU_viewer
-    src/IMUviewer.cpp
-)
-
-target_link_libraries(IMU_viewer PRIVATE
-    ui_lib
-    receiver_lib
-    glfw
-    OpenGL::GL
 )
 
 # IMU_server
@@ -63,10 +49,14 @@ target_link_libraries(IMU_server PRIVATE
     receiver_lib
 )
 
-# GPS_server
-add_executable(GPS_server
-    src/GPSserver.cpp
+# Viewer
+add_executable(Viewer
+    src/viewer.cpp
 )
-target_link_libraries(GPS_server PRIVATE
+
+target_link_libraries(Viewer PRIVATE
+    ui_lib
     receiver_lib
+    glfw
+    OpenGL::GL
 )

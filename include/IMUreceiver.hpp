@@ -8,8 +8,8 @@
 #define MAX 1024
 #endif
 
-#ifndef PORT
-#define PORT 8888
+#ifndef IMU_PORT
+#define IMU_PORT 8888
 #endif
 
 #ifndef SA

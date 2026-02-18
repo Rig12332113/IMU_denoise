@@ -5,6 +5,7 @@
 #include <mutex>
 #include <string>
 #include <thread>
+#include <utility>
 
 // macOS sockets
 #include <sys/socket.h>
@@ -57,10 +58,11 @@ struct ImuRawBuffers {
     std::mutex m;
 };
 
+
 // ----------------------
-// TCP receiver thread
+// IMU receiver thread
 // ----------------------
-static void tcp_receiver_thread(ImuRawBuffers* buf, std::atomic<bool>* running) {
+static void imu_receiver_thread(ImuRawBuffers* buf, std::atomic<bool>* running) {
     int sockfd = socket(AF_INET, SOCK_STREAM, 0);
     if (sockfd < 0) {
         std::fprintf(stderr, "[viewer] socket() failed\n");
@@ -73,10 +75,10 @@ static void tcp_receiver_thread(ImuRawBuffers* buf, std::atomic<bool>* running) 
     sockaddr_in servaddr{};
     servaddr.sin_family = AF_INET;
     servaddr.sin_addr.s_addr = htonl(INADDR_ANY);
-    servaddr.sin_port = htons(PORT);
+    servaddr.sin_port = htons(IMU_PORT);
 
     if (bind(sockfd, (SA*)&servaddr, sizeof(servaddr)) != 0) {
-        std::fprintf(stderr, "[viewer] bind() failed on port %d (is IMU_server running?)\n", PORT);
+        std::fprintf(stderr, "[viewer] bind() failed on port %d (is IMU_server running?)\n", IMU_PORT);
         close(sockfd);
         return;
     }
@@ -87,7 +89,7 @@ static void tcp_receiver_thread(ImuRawBuffers* buf, std::atomic<bool>* running) 
         return;
     }
 
-    std::fprintf(stderr, "[viewer] listening on TCP port %d ...\n", PORT);
+    std::fprintf(stderr, "[viewer] listening on TCP port %d ...\n", IMU_PORT);
 
     // Accept with select timeout so we can stop gracefully.
     int connfd = -1;
@@ -130,7 +132,7 @@ static void tcp_receiver_thread(ImuRawBuffers* buf, std::atomic<bool>* running) 
 
     char buf_read[MAX];
 
-    // Read loop with select timeout so we can stop gracefully.
+    // Read loop with select timeout.
     while (running->load()) {
         fd_set rfds;
         FD_ZERO(&rfds);
@@ -204,6 +206,7 @@ static void tcp_receiver_thread(ImuRawBuffers* buf, std::atomic<bool>* running) 
     std::fprintf(stderr, "[viewer] receiver thread exit\n");
 }
 
+
 int main() {
     // ----------------------
     // GLFW + OpenGL init
@@ -244,8 +247,9 @@ int main() {
     // Data + receiver thread
     // ----------------------
     ImuRawBuffers raw;
+
     std::atomic<bool> running{true};
-    std::thread rx(tcp_receiver_thread, &raw, &running);
+    std::thread rx(imu_receiver_thread, &raw, &running);
 
     // x-axis (0..149)
     static constexpr int N = Ring150::N;
@@ -297,7 +301,7 @@ int main() {
             | ImGuiWindowFlags_NoCollapse;
 
         ImGui::Begin("IMU Raw Accel", nullptr, flags);
-        ImGui::Text("Listening on TCP port %d (stop IMU_server if it uses the same port).", PORT);
+        ImGui::Text("Listening on TCP port %d (stop IMU_server if it uses the same port).", IMU_PORT);
         ImGui::Text("Samples available: %d / %d", count, N);
 
         static bool show_denoised = true;
@@ -335,9 +339,11 @@ int main() {
 
         // Window 2 numerical data
         ImGui::SetNextWindowPos(ImVec2(600, 0), ImGuiCond_Always);
-        ImGui::SetNextWindowSize(ImVec2(300, 400), ImGuiCond_Always);
+        ImGui::SetNextWindowSize(ImVec2(300, 200), ImGuiCond_Always);
 
-        ImGui::Begin("raw numerical data", nullptr, flags);
+        ImGui::Begin("IMU Data", nullptr, flags);
+        ImGui::Text("IMU port: %d", IMU_PORT);
+        ImGui::Separator();
         if (count > 0) {
             float ax_last = ax_s[count - 1];
             float ay_last = ay_s[count - 1];
